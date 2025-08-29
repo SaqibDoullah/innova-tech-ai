@@ -1,7 +1,11 @@
 name: Build & Publish Vite Dist to Deploy Branch
+
 on:
   push:
     branches: [ main ]
+
+permissions:
+  contents: write   # <-- allows pushing to deploy branch
 
 jobs:
   build:
